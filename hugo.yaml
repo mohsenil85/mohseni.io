@@ -210,7 +210,7 @@ params:
         featured:
           name: "Visit"
           link: "https://imbolc.studio"
-      - title: "Cassian & Logan's Wedding"
+      - title: "Cassi & Logan Are Getting Married"
         content: "Wedding website with event details and RSVP."
         badges:
           - "Hugo"
