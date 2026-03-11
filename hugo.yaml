@@ -195,7 +195,7 @@ params:
           - "AWS"
           - "TypeScript"
       - title: "Mountain Dreamer Counseling"
-        content: "Website for a private counseling practice based in Montana."
+        content: "Website for a private counseling practice based in Colorado."
         badges:
           - "Hugo"
           - "GitHub Pages"
