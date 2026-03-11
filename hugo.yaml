@@ -203,10 +203,10 @@ params:
           name: "Visit"
           link: "https://mountaindreamercounseling.com"
       - title: "Imbolc Studio"
-        content: "Website for a creative studio."
+        content: "A command-line digital audio workstation."
         badges:
-          - "Hugo"
-          - "GitHub Pages"
+          - "CLI"
+          - "Audio"
         featured:
           name: "Visit"
           link: "https://imbolc.studio"
