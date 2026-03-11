@@ -213,7 +213,7 @@ params:
       - title: "Cassi & Logan Are Getting Married"
         content: "Wedding website with event details and RSVP."
         badges:
-          - "Hugo"
+          - "HTML"
           - "GitHub Pages"
         featured:
           name: "Visit"
