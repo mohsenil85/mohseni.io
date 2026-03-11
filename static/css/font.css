@@ -1,0 +1,10 @@
+/* Single-family typography override for the site */
+body,
+.secondary-font,
+#secondary-font,
+.primary-font,
+#primary-font,
+.default-font,
+#default-font {
+  font-family: "Lora", Georgia, serif !important;
+}

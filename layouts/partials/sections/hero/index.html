@@ -1,0 +1,24 @@
+{{ if .Site.Params.hero.enable | default false }}
+{{- $hero := .Site.Language.Params.hero | default .Site.Params.hero -}}
+<section id="hero" class="py-5">
+    <div class="container px-3 px-sm-5 px-md-5 px-lg-5">
+        <div class="hero-wrap">
+            {{ with $hero.intro }}
+            <p class="subtitle">{{ . }}</p>
+            {{ end }}
+            <h1>{{ $hero.title }}</h1>
+            <h2>{{ $hero.subtitle }}</h2>
+            <p class="hero-content">{{ $hero.content | markdownify }}</p>
+            <div class="hero-actions">
+                {{ if .Site.Params.hero.button.enable }}
+                <a href="{{ .Site.Params.hero.button.url }}" class="btn" {{ cond .Site.Params.hero.button.download "download" "" }}
+                    {{ if .Site.Params.hero.button.newPage | default true }} target="_blank" {{ end }}>
+                    {{ $hero.button.name | default .Site.Params.hero.button.name }}
+                </a>
+                {{ end }}
+                {{- partial "sections/hero/social.html" . -}}
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

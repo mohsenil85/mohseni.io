@@ -1,0 +1,37 @@
+{{ if .Site.Params.experience.enable | default false }}
+{{- $experience := .Site.Language.Params.experience | default .Site.Params.experience -}}
+<section id="experience" class="py-5">
+    <div class="container">
+        <h3 class="text-center">{{ $experience.title | default .Site.Params.experience.title | default (i18n "experience") }}</h3>
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-10 col-lg-9 py-2">
+                <div class="experience-container">
+                    {{ range $experience.items | default .Site.Params.experience.items }}
+                    <div class="experience-item">
+                        <h4 class="experience-company">
+                            {{ if .companyUrl }}
+                            <a href="{{ .companyUrl }}" target="_blank" rel="noopener noreferrer">{{ .company }}</a>
+                            {{ else }}
+                            {{ .company }}
+                            {{ end }}
+                        </h4>
+
+                        {{ range .jobs }}
+                        <article class="experience-role">
+                            <div class="experience-role-head">
+                                <span class="experience-role-title">{{ .name }}</span>
+                                <small class="experience-date">{{ .date }}</small>
+                            </div>
+                            <div class="experience-role-content">
+                                {{ .content | markdownify }}
+                            </div>
+                        </article>
+                        {{ end }}
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

@@ -1,0 +1,79 @@
+{{ define "main" }}
+<div class="resume-shell">
+  <div class="resume-actions">
+    <a href="/files/resume.pdf" download class="resume-download">Download PDF</a>
+  </div>
+
+  <div class="resume-content">
+    <div class="resume-header">
+      <h1>Logan Mohseni</h1>
+      <p>
+        <a href="mailto:logan@mohseni.io">logan@mohseni.io</a>
+        &ensp;|&ensp;
+        <a href="https://github.com/mohsenil85">github.com/mohsenil85</a>
+        &ensp;|&ensp;
+        Denver, CO
+      </p>
+    </div>
+
+    <section class="resume-block">
+      <h2>Summary</h2>
+      <p>Senior full-stack engineer with 12+ years of professional experience building and shipping production systems.
+      Currently delivering serverless applications on AWS for nuclear and gas utility operations at Xcel Energy.
+      Background spans infrastructure, backend architecture, and frontend development.</p>
+    </section>
+
+    <section class="resume-block">
+      <h2>Experience</h2>
+
+      <div class="resume-role">
+        <strong>Software Engineer</strong>
+        <span class="resume-meta">2022 &ndash; Present</span>
+      </div>
+      <div class="resume-role">
+        <em>Xcel Energy</em>
+        <em class="resume-meta">Denver, CO</em>
+      </div>
+      <ul>
+        <li>Built a full-stack nuclear outage scheduling platform (React, Node.js, Lambda, DynamoDB)</li>
+        <li>Drove platform-wide SSO migration, eliminating 13,000 lines of legacy auth code</li>
+        <li>Led DDD refactor of API layer into domain aggregates and bounded contexts</li>
+        <li>Integrated OpenSearch Serverless for materials search, reducing code complexity 30%</li>
+        <li>Led greenfield app foundation: monorepo structure, build tooling, TypeScript, CI/CD</li>
+        <li>Designed SAP integration service, unblocking batch processing across incompatible systems</li>
+        <li>Maintained Terraform IaC across 3+ apps (DynamoDB, Lambda, API Gateway, IAM)</li>
+        <li>Shipped shared TypeScript DTO packages with automated CI/CD for API contract consistency</li>
+      </ul>
+
+      <div class="resume-role">
+        <strong>Sr. Software Developer / Systems Administrator</strong>
+        <span class="resume-meta">2013 &ndash; 2022</span>
+      </div>
+      <div class="resume-role">
+        <em>SingleMind Consulting</em>
+        <em class="resume-meta">Portland, OR</em>
+      </div>
+      <p>Grew from Jr. Sysadmin to Sr. Developer over 9 years. Shipped features for a top-5 textbook publisher&rsquo;s platform (millions of users), managed 30+ Linux/FreeBSD hosts, and became the team&rsquo;s go-to for git, CI/CD, and AWS.</p>
+    </section>
+
+    <section class="resume-block">
+      <h2>Skills</h2>
+      <p>
+        <strong>Languages &amp; Frameworks:</strong> TypeScript, JavaScript, React, Node.js, Python, Java, Spring Boot<br>
+        <strong>Infrastructure:</strong> AWS (Lambda, DynamoDB, API Gateway, OpenSearch), Terraform, Linux, Docker<br>
+        <strong>Things I Love:</strong> OpenBSD, Emacs, Vim, Lisp, Claude<br>
+        <strong>Things I Don&rsquo;t Love:</strong> Unnecessary complexity, untyped code, unplanned outages, or an unexamined diff
+      </p>
+    </section>
+
+    <section class="resume-block">
+      <h2>Education</h2>
+      <div class="resume-role">
+        <span><strong>B.S. Linguistics</strong> (Anthropology)</span>
+        <span class="resume-meta">May 2011</span>
+      </div>
+      <p>University of Montana, Missoula</p>
+    </section>
+  </div>
+</div>
+{{ end }}
