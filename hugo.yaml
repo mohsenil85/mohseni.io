@@ -194,6 +194,30 @@ params:
           - "OpenSearch"
           - "AWS"
           - "TypeScript"
+      - title: "Mountain Dreamer Counseling"
+        content: "Website for a private counseling practice based in Montana."
+        badges:
+          - "Hugo"
+          - "GitHub Pages"
+        featured:
+          name: "Visit"
+          link: "https://mountaindreamercounseling.com"
+      - title: "Imbolc Studio"
+        content: "Website for a creative studio."
+        badges:
+          - "Hugo"
+          - "GitHub Pages"
+        featured:
+          name: "Visit"
+          link: "https://imbolc.studio"
+      - title: "Cassian & Logan's Wedding"
+        content: "Wedding website with event details and RSVP."
+        badges:
+          - "Hugo"
+          - "GitHub Pages"
+        featured:
+          name: "Visit"
+          link: "https://cassiandloganaregettingmarried.com"
 
   # Contact
   contact:
