@@ -174,26 +174,36 @@ params:
   projects:
     enable: true
     items:
-      - title: "Nuclear Outage Scheduling Platform"
-        content: "Full-stack serverless application for managing nuclear plant outage schedules. React frontend, Node.js Lambda backend, DynamoDB storage."
+      - title: "MCP Servers"
+        content: "Model Context Protocol servers for integrating AI assistants with external tools — Soulseek, git-bug, restic backups, job search workflows, and more."
         badges:
-          - "React"
-          - "Node.js"
-          - "AWS Lambda"
-          - "DynamoDB"
+          - "MCP"
+          - "Python"
           - "TypeScript"
-      - title: "SAP Integration Service"
-        content: "Designed integration layer between legacy SAP systems and modern serverless architecture, unblocking batch processing across incompatible systems."
+        links:
+          - icon: "fab fa-github"
+            url: "https://github.com/mohsenil85/slskd-mcp"
+          - icon: "fab fa-github"
+            url: "https://github.com/mohsenil85/git-bug-mcp"
+          - icon: "fab fa-github"
+            url: "https://github.com/mohsenil85/claude-output-cache"
+          - icon: "fab fa-github"
+            url: "https://github.com/mohsenil85/restic-mcp"
+          - icon: "fab fa-github"
+            url: "https://github.com/mohsenil85/jobkit-mcp"
+      - title: "Claude Code Tools"
+        content: "Tools and extensions for Claude Code — task dispatch, reusable skills, and procedurally-generated sound effects."
         badges:
-          - "AWS"
-          - "Node.js"
-          - "SAP"
-      - title: "OpenSearch Materials Search"
-        content: "Integrated OpenSearch Serverless for materials search, reducing code complexity by 30% and improving search relevance."
-        badges:
-          - "OpenSearch"
-          - "AWS"
+          - "Claude Code"
+          - "CLI"
           - "TypeScript"
+        links:
+          - icon: "fab fa-github"
+            url: "https://github.com/mohsenil85/claude-dispatch"
+          - icon: "fab fa-github"
+            url: "https://github.com/mohsenil85/claude-skills"
+          - icon: "fab fa-github"
+            url: "https://github.com/mohsenil85/claude-sound-actions"
       - title: "Mountain Dreamer Counseling"
         content: "Website for a private counseling practice based in Colorado."
         badges:
